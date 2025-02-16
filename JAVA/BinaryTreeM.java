@@ -1,3 +1,6 @@
+
+import java.util.*;
+
 public class BinaryTreeM {
 
     static class Node {
@@ -14,9 +17,7 @@ public class BinaryTreeM {
     static class BinaryTree{
         static int idx = -1;
         public static Node buildTree(int nodes[]){
-            if(idx >= nodes.length-1){
-                return null;
-            }
+
             idx++;
             if(nodes[idx] == -1){
                 return null;
@@ -28,14 +29,38 @@ public class BinaryTreeM {
             newNode.right = buildTree(nodes);
 
             return newNode;
-
-
         }
     }
+
+    public static void preorder(Node root){
+        if(root == null){
+            return;
+        }
+        System.out.println(root.data);
+        preorder(root.left);
+        preorder(root.right);
+    }
+    public static void inorder(Node root){
+
+        if(root == null){
+            return;
+        }
+        inorder(root.left);
+        inorder(root.right);
+        System.out.println(root.data +" ");
+
+
+    }
+
+
+    public static void LevelOrder(){
+        Queue<Node> queue = new LinkedList<>();
+    }
     public static void main(String args[]){
-        int nodes[] = {1,2,4 -1,-1,5,-1,-1,3,-1,6,-1,-1};
+        int nodes[] = {1,2,4 ,-1,-1,5,-1,-1,3,-1,6,-1,-1};
         BinaryTree tree = new BinaryTree(); 
         Node root = tree.buildTree(nodes); 
-        System.out.println(root.data);
+        // System.out.println(root);
+        inorder(root);
     }
 }
