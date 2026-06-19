@@ -1,6 +1,7 @@
 import java.util.*;
-public class Hashing {
+public class Hash_Map {
 public static void main(String[] args) {
+
 
 //country(key), population(value)
 HashMap<String, Integer> map = new HashMap<>();

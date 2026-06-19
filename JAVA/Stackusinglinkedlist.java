@@ -1,4 +1,4 @@
-public class Stackusinglinkedlist {
+public class StackUsingLinkedList {
     static class Node{
         int data;
         Node next;
