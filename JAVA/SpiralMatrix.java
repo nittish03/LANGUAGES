@@ -35,7 +35,7 @@ public class SpiralMatrix {
                 mat[i][right] = num++;
             }
             right--;
-
+            
             if (top <= bottom) {
                 for (int i = right; i >= left; i--) {
                     mat[bottom][i] = num++;
@@ -50,7 +50,6 @@ public class SpiralMatrix {
                 left++;
             }
         }
-
         return mat;
     }
 }
