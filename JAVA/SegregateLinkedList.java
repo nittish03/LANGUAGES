@@ -1,4 +1,4 @@
-public class Chaayos {
+public class SegregateLinkedList {
 
     static class Node {
         int data;

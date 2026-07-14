@@ -1,5 +1,5 @@
 import java.util.*;
-public class DArray {
+public class SetMatrixZeroesNittish {
     public static void main(String[] args) throws Exception {
         // Scanner sc = new Scanner(System.in);
         // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
