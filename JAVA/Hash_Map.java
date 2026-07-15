@@ -28,6 +28,8 @@ System.out.println(e.getKey());
 System.out.println(e.getValue());
 }
 
+map.put("Indonesia",map.getOrDefault("Indonesia",0)+1);
+
 Set<String> keys = map.keySet();
 for(String key: keys){
     System.out.println(key + ' ' + map.get(key));

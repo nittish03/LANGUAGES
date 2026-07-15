@@ -31,6 +31,22 @@ public class Chaayos {
             // 2. Detach curr so it can be safely added to the correct list.
             curr.next = null;
 
+            // switch (curr.data) {
+            //     case 0:
+            //         zero.next = curr;
+            //         zero = curr;
+            //         break;
+            //     case 1:
+            //         one.next = curr;
+            //         one = curr;
+            //         break;
+            //     case 2:
+            //         two.next = curr;
+            //         two = curr;
+            //         break;
+            //     default:
+            //         break;
+            // }
             if (curr.data == 0) {
                 // If curr is 0, attach it after the last 0 node.
                 zero.next = curr;

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 public class ArrayLists {
     public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class ArrayLists {
         // get elements
         int element = list.get(2);
         // add element at a index
-        list.add(1, 1);
+        list.add(1, 1);//doesn't replace but adds at the index
         System.out.println(list);
         // set element / update element
         list.set(0, 5);
@@ -29,5 +30,12 @@ public class ArrayLists {
         // sorting
         Collections.sort(list);
         System.out.println(list);
+
+
+        String[] arr = {"A", "B", "C"};
+
+        int index = Arrays.asList(arr).indexOf("B");
+
+        System.out.println("index " + index); // 1
     }
 }
